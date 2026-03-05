@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src ="../task 5/script.js"></script>
+</head>
+
+<body>
+    <table>
+        <tr>
+            <td> Email</td>
+        <td>
+            <input
+            type ="text"
+            id="email"
+            name ="email"
+            placeholder="Enter your email"
+            onchange="return getEmail();"
+            />
+
+        </td>
+        <td><p id ="emailErr" style = "color :red"></p></td>
+    </tr>
+
+    <tr>
+        <td>Password</td>
+        <td>
+            <input
+            type ="password"
+            id ="password"
+            name="password"
+            placeholder = "enter your password"
+            onkeyup ="return getPassoword();"
+            />
+        </td>
+        <td><p id ="passwordErr"></p></td>
+    </tr>
+    <tr>
+        <td></td>
+        <td>
+            <input
+            type ="submit"
+            name="login"
+            id = "login"
+            onclick ="return collect_data();"
+            />
+            
+        </td>
+    </tr>
+    </table>
+</body>
+</html>
